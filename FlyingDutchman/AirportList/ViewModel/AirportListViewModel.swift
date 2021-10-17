@@ -36,11 +36,18 @@ class AirportListViewModel {
         }
     }
 
-    func viewModelFor(index: Int) -> AirportModel? {
+    func modelFor(index: Int) -> AirportModel? {
         guard index >= 0 && index < airportCount else {
             return nil
         }
         return airportList?[index]
+    }
+
+    func viewModelForDetail(at index: Int) -> AirportDetailViewModel? {
+        guard let model = modelFor(index: index) else { return nil }
+        
+        let viewModel = AirportDetailViewModel(detailModel: model)
+        return viewModel
     }
 
 }

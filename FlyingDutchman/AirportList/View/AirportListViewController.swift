@@ -53,7 +53,15 @@ class AirportListViewController: UIViewController {
 }
 
 extension AirportListViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let model = viewModel.viewModelForDetail(at: indexPath.row) else { return }
 
+        let detailsViewController = AirportDetailViewController()
+        detailsViewController.viewModel = model
+
+        present(detailsViewController, animated: true)
+        
+    }
 }
 
 extension AirportListViewController: UITableViewDataSource {
@@ -65,7 +73,7 @@ extension AirportListViewController: UITableViewDataSource {
 
         let cell = tableView.dequeueReusableCell(withIdentifier: "airportCell", for: indexPath)
 
-        guard let model = viewModel.viewModelFor(index: indexPath.row) else { return cell }
+        guard let model = viewModel.modelFor(index: indexPath.row) else { return cell }
 
         cell.textLabel?.text = model.airportName
         cell.detailTextLabel?.text = model.country.countryName
