@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum FlyingListRouter: Routable {
+enum AirportListRouter: Routable {
 
     case fetchFlyingList
 

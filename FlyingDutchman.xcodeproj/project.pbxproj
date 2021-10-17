@@ -9,17 +9,23 @@
 /* Begin PBXBuildFile section */
 		1A196468271B0916002AF824 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A196467271B0916002AF824 /* AppDelegate.swift */; };
 		1A19646A271B0916002AF824 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A196469271B0916002AF824 /* SceneDelegate.swift */; };
-		1A19646C271B0916002AF824 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A19646B271B0916002AF824 /* ViewController.swift */; };
+		1A19646C271B0916002AF824 /* AirportListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A19646B271B0916002AF824 /* AirportListViewController.swift */; };
 		1A19646F271B0916002AF824 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A19646D271B0916002AF824 /* Main.storyboard */; };
 		1A196471271B0918002AF824 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A196470271B0918002AF824 /* Assets.xcassets */; };
 		1A196474271B0918002AF824 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A196472271B0918002AF824 /* LaunchScreen.storyboard */; };
 		1A19647F271B0919002AF824 /* FlyingDutchmanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A19647E271B0919002AF824 /* FlyingDutchmanTests.swift */; };
 		1A19648A271B0919002AF824 /* FlyingDutchmanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A196489271B0919002AF824 /* FlyingDutchmanUITests.swift */; };
 		1A971DC9271B9DD400707CFE /* Routable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A971DC8271B9DD400707CFE /* Routable.swift */; };
-		1A971DCE271B9F1500707CFE /* FlyingListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A971DCD271B9F1500707CFE /* FlyingListViewModel.swift */; };
-		1A971DD1271BA3C100707CFE /* FlyingListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A971DD0271BA3C100707CFE /* FlyingListRouter.swift */; };
-		1A971DD4271BA61B00707CFE /* FlyingDutchmanModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A971DD3271BA61B00707CFE /* FlyingDutchmanModel.swift */; };
-		1A971DD7271BA65100707CFE /* FlyingDutchmanItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A971DD6271BA65100707CFE /* FlyingDutchmanItemModel.swift */; };
+		1A971DCE271B9F1500707CFE /* AirportListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A971DCD271B9F1500707CFE /* AirportListViewModel.swift */; };
+		1A971DD1271BA3C100707CFE /* AirportListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A971DD0271BA3C100707CFE /* AirportListRouter.swift */; };
+		1A971DD4271BA61B00707CFE /* AirportListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A971DD3271BA61B00707CFE /* AirportListModel.swift */; };
+		1A971DD7271BA65100707CFE /* AirportModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A971DD6271BA65100707CFE /* AirportModel.swift */; };
+		1A971DD9271BB17F00707CFE /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A971DD8271BB17F00707CFE /* APIService.swift */; };
+		1A971DDC271BB1D000707CFE /* AirportListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A971DDB271BB1D000707CFE /* AirportListService.swift */; };
+		1A971DDE271BCB0100707CFE /* CityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A971DDD271BCB0100707CFE /* CityModel.swift */; };
+		1A971DE0271BCB3C00707CFE /* CountryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A971DDF271BCB3C00707CFE /* CountryModel.swift */; };
+		1A971DE2271BCB5000707CFE /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A971DE1271BCB5000707CFE /* LocationModel.swift */; };
+		1A971DE4271BCB6C00707CFE /* RegionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A971DE3271BCB6C00707CFE /* RegionModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +49,7 @@
 		1A196464271B0915002AF824 /* FlyingDutchman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlyingDutchman.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A196467271B0916002AF824 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A196469271B0916002AF824 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1A19646B271B0916002AF824 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1A19646B271B0916002AF824 /* AirportListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportListViewController.swift; sourceTree = "<group>"; };
 		1A19646E271B0916002AF824 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1A196470271B0918002AF824 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A196473271B0918002AF824 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,10 +61,16 @@
 		1A196489271B0919002AF824 /* FlyingDutchmanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyingDutchmanUITests.swift; sourceTree = "<group>"; };
 		1A19648B271B0919002AF824 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A971DC8271B9DD400707CFE /* Routable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Routable.swift; sourceTree = "<group>"; };
-		1A971DCD271B9F1500707CFE /* FlyingListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyingListViewModel.swift; sourceTree = "<group>"; };
-		1A971DD0271BA3C100707CFE /* FlyingListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyingListRouter.swift; sourceTree = "<group>"; };
-		1A971DD3271BA61B00707CFE /* FlyingDutchmanModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyingDutchmanModel.swift; sourceTree = "<group>"; };
-		1A971DD6271BA65100707CFE /* FlyingDutchmanItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyingDutchmanItemModel.swift; sourceTree = "<group>"; };
+		1A971DCD271B9F1500707CFE /* AirportListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportListViewModel.swift; sourceTree = "<group>"; };
+		1A971DD0271BA3C100707CFE /* AirportListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportListRouter.swift; sourceTree = "<group>"; };
+		1A971DD3271BA61B00707CFE /* AirportListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportListModel.swift; sourceTree = "<group>"; };
+		1A971DD6271BA65100707CFE /* AirportModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportModel.swift; sourceTree = "<group>"; };
+		1A971DD8271BB17F00707CFE /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		1A971DDB271BB1D000707CFE /* AirportListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportListService.swift; sourceTree = "<group>"; };
+		1A971DDD271BCB0100707CFE /* CityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityModel.swift; sourceTree = "<group>"; };
+		1A971DDF271BCB3C00707CFE /* CountryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryModel.swift; sourceTree = "<group>"; };
+		1A971DE1271BCB5000707CFE /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
+		1A971DE3271BCB6C00707CFE /* RegionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,10 +121,11 @@
 		1A196466271B0915002AF824 /* FlyingDutchman */ = {
 			isa = PBXGroup;
 			children = (
+				1A971DE5271BCF6A00707CFE /* AirportDetail */,
 				1A971DC7271B9DD400707CFE /* Network */,
 				1A196467271B0916002AF824 /* AppDelegate.swift */,
 				1A196469271B0916002AF824 /* SceneDelegate.swift */,
-				1A971DCA271B9EC500707CFE /* FlyingList */,
+				1A971DCA271B9EC500707CFE /* AirportList */,
 				1A19646D271B0916002AF824 /* Main.storyboard */,
 				1A196470271B0918002AF824 /* Assets.xcassets */,
 				1A196472271B0918002AF824 /* LaunchScreen.storyboard */,
@@ -143,25 +156,27 @@
 			isa = PBXGroup;
 			children = (
 				1A971DC8271B9DD400707CFE /* Routable.swift */,
+				1A971DD8271BB17F00707CFE /* APIService.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
 		};
-		1A971DCA271B9EC500707CFE /* FlyingList */ = {
+		1A971DCA271B9EC500707CFE /* AirportList */ = {
 			isa = PBXGroup;
 			children = (
+				1A971DDA271BB1A500707CFE /* Services */,
 				1A971DD2271BA54000707CFE /* Entities */,
 				1A971DCF271BA3B200707CFE /* Router */,
 				1A971DCC271B9EF400707CFE /* ViewModel */,
 				1A971DCB271B9EEF00707CFE /* View */,
 			);
-			path = FlyingList;
+			path = AirportList;
 			sourceTree = "<group>";
 		};
 		1A971DCB271B9EEF00707CFE /* View */ = {
 			isa = PBXGroup;
 			children = (
-				1A19646B271B0916002AF824 /* ViewController.swift */,
+				1A19646B271B0916002AF824 /* AirportListViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -169,7 +184,7 @@
 		1A971DCC271B9EF400707CFE /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				1A971DCD271B9F1500707CFE /* FlyingListViewModel.swift */,
+				1A971DCD271B9F1500707CFE /* AirportListViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -177,7 +192,7 @@
 		1A971DCF271BA3B200707CFE /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				1A971DD0271BA3C100707CFE /* FlyingListRouter.swift */,
+				1A971DD0271BA3C100707CFE /* AirportListRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -185,10 +200,37 @@
 		1A971DD2271BA54000707CFE /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				1A971DD3271BA61B00707CFE /* FlyingDutchmanModel.swift */,
-				1A971DD6271BA65100707CFE /* FlyingDutchmanItemModel.swift */,
+				1A971DD3271BA61B00707CFE /* AirportListModel.swift */,
+				1A971DD6271BA65100707CFE /* AirportModel.swift */,
+				1A971DDD271BCB0100707CFE /* CityModel.swift */,
+				1A971DDF271BCB3C00707CFE /* CountryModel.swift */,
+				1A971DE1271BCB5000707CFE /* LocationModel.swift */,
+				1A971DE3271BCB6C00707CFE /* RegionModel.swift */,
 			);
 			path = Entities;
+			sourceTree = "<group>";
+		};
+		1A971DDA271BB1A500707CFE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1A971DDB271BB1D000707CFE /* AirportListService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		1A971DE5271BCF6A00707CFE /* AirportDetail */ = {
+			isa = PBXGroup;
+			children = (
+				1A971DE6271BCF7700707CFE /* View */,
+			);
+			path = AirportDetail;
+			sourceTree = "<group>";
+		};
+		1A971DE6271BCF7700707CFE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,13 +363,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A19646C271B0916002AF824 /* ViewController.swift in Sources */,
-				1A971DD1271BA3C100707CFE /* FlyingListRouter.swift in Sources */,
+				1A19646C271B0916002AF824 /* AirportListViewController.swift in Sources */,
+				1A971DDE271BCB0100707CFE /* CityModel.swift in Sources */,
+				1A971DD1271BA3C100707CFE /* AirportListRouter.swift in Sources */,
 				1A196468271B0916002AF824 /* AppDelegate.swift in Sources */,
-				1A971DD4271BA61B00707CFE /* FlyingDutchmanModel.swift in Sources */,
+				1A971DE0271BCB3C00707CFE /* CountryModel.swift in Sources */,
+				1A971DDC271BB1D000707CFE /* AirportListService.swift in Sources */,
+				1A971DE2271BCB5000707CFE /* LocationModel.swift in Sources */,
+				1A971DD4271BA61B00707CFE /* AirportListModel.swift in Sources */,
 				1A19646A271B0916002AF824 /* SceneDelegate.swift in Sources */,
-				1A971DD7271BA65100707CFE /* FlyingDutchmanItemModel.swift in Sources */,
-				1A971DCE271B9F1500707CFE /* FlyingListViewModel.swift in Sources */,
+				1A971DD7271BA65100707CFE /* AirportModel.swift in Sources */,
+				1A971DCE271B9F1500707CFE /* AirportListViewModel.swift in Sources */,
+				1A971DE4271BCB6C00707CFE /* RegionModel.swift in Sources */,
+				1A971DD9271BB17F00707CFE /* APIService.swift in Sources */,
 				1A971DC9271B9DD400707CFE /* Routable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,6 +7,4 @@
 
 import Foundation
 
-struct FlyingDutchmanModel: Decodable {
-    var flyingList: [FlyingDutchmanItemModel]
-}
+typealias AirportListModel = [AirportModel]

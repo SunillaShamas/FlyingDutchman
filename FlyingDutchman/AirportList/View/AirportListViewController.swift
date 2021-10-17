@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  AirportsViewController.swift
 //  FlyingDutchman
 //
 //  Created by Sunilla Sarfraz on 17/10/21.
@@ -7,12 +7,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class AirportListViewController: UIViewController {
 
     @IBOutlet private weak var loadingIndicator: UIActivityIndicatorView!
     @IBOutlet private weak var tableView: UITableView!
 
-    private var viewModel: FlyingListViewModel = .init()
+    private var viewModel: AirportListViewModel = .init()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,11 +30,12 @@ class ViewController: UIViewController {
     }
 
     private func setupViewModel() {
-        viewModel.viewStateDidUpdate = { [weak self] state in
-            guard let self = self else { return }
+        viewModel.viewStateDidUpdate = updateView
+    }
 
-            self.loadingIndicator.isHidden = true
-            self.tableView.isHidden = true
+    func updateView(state: AirportListViewState) {
+        DispatchQueue.main.async { [weak self] in
+            guard let self = self else { return }
 
             switch state {
             case .loading:
@@ -42,6 +43,7 @@ class ViewController: UIViewController {
                 self.loadingIndicator.startAnimating()
             case .loaded:
                 self.tableView.isHidden = false
+                self.tableView.reloadData()
             case .failure:
                 self.tableView.isHidden = false
             }
@@ -50,11 +52,11 @@ class ViewController: UIViewController {
 
 }
 
-extension ViewController: UITableViewDelegate {
+extension AirportListViewController: UITableViewDelegate {
 
 }
 
-extension ViewController: UITableViewDataSource {
+extension AirportListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         5
     }
@@ -62,7 +64,5 @@ extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         .init()
     }
-
-
 }
 
