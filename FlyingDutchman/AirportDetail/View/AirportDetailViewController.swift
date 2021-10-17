@@ -28,6 +28,19 @@ class AirportDetailViewController: UIViewController {
                 stackView.addArrangedSubview(row)
             }
         }
+        addBackButton()
+    }
+
+    private func addBackButton() {
+        let backButton = UIButton()
+        backButton.setTitle("Go Back", for: .normal)
+        backButton.setTitleColor(.systemBlue, for: .normal)
+        backButton.addTarget(self, action: #selector(goBack), for: UIControl.Event.touchUpInside)
+        stackView.addArrangedSubview(backButton)
+    }
+
+    @objc private func goBack() {
+        self.dismiss(animated: true)
     }
 
 
