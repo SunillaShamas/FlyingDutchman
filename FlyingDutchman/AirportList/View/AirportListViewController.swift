@@ -58,11 +58,18 @@ extension AirportListViewController: UITableViewDelegate {
 
 extension AirportListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        5
+        viewModel.airportCount
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        .init()
+
+        let cell = tableView.dequeueReusableCell(withIdentifier: "airportCell", for: indexPath)
+
+        guard let model = viewModel.viewModelFor(index: indexPath.row) else { return cell }
+
+        cell.textLabel?.text = model.airportName
+        cell.detailTextLabel?.text = model.country.countryName
+        return cell
     }
 }
 
