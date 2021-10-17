@@ -27,6 +27,14 @@ class AirportListViewModel {
     }
 
     func viewDidLoad() {
+        fetchData()
+    }
+
+    func viewDidRetry() {
+        fetchData()
+    }
+
+    private func fetchData() {
         viewStateDidUpdate?(.loading)
         service.fetch(urlRequest: AirportListRouter.fetchFlyingList) { [weak self] result in
             guard let self = self else { return }

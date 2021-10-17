@@ -71,8 +71,20 @@ class AirportListViewController: UIViewController {
                 self.tableView.reloadData()
             case .failure:
                 self.tableView.isHidden = false
+                self.showRetryAlert()
             }
         }
+    }
+
+    func showRetryAlert() {
+        let alert = UIAlertController(title: "Data fetch failed", message: "Would you like to retry?", preferredStyle: .alert)
+
+        alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { [weak self] action in
+            self?.viewModel.viewDidRetry()
+        }))
+        alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
+
+        self.present(alert, animated: true)
     }
 
 }
