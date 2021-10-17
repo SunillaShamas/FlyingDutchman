@@ -17,6 +17,9 @@
 		1A19648A271B0919002AF824 /* FlyingDutchmanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A196489271B0919002AF824 /* FlyingDutchmanUITests.swift */; };
 		1A971DC9271B9DD400707CFE /* Routable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A971DC8271B9DD400707CFE /* Routable.swift */; };
 		1A971DCE271B9F1500707CFE /* FlyingListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A971DCD271B9F1500707CFE /* FlyingListViewModel.swift */; };
+		1A971DD1271BA3C100707CFE /* FlyingListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A971DD0271BA3C100707CFE /* FlyingListRouter.swift */; };
+		1A971DD4271BA61B00707CFE /* FlyingDutchmanModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A971DD3271BA61B00707CFE /* FlyingDutchmanModel.swift */; };
+		1A971DD7271BA65100707CFE /* FlyingDutchmanItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A971DD6271BA65100707CFE /* FlyingDutchmanItemModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		1A19648B271B0919002AF824 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A971DC8271B9DD400707CFE /* Routable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Routable.swift; sourceTree = "<group>"; };
 		1A971DCD271B9F1500707CFE /* FlyingListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyingListViewModel.swift; sourceTree = "<group>"; };
+		1A971DD0271BA3C100707CFE /* FlyingListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyingListRouter.swift; sourceTree = "<group>"; };
+		1A971DD3271BA61B00707CFE /* FlyingDutchmanModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyingDutchmanModel.swift; sourceTree = "<group>"; };
+		1A971DD6271BA65100707CFE /* FlyingDutchmanItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyingDutchmanItemModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +150,8 @@
 		1A971DCA271B9EC500707CFE /* FlyingList */ = {
 			isa = PBXGroup;
 			children = (
+				1A971DD2271BA54000707CFE /* Entities */,
+				1A971DCF271BA3B200707CFE /* Router */,
 				1A971DCC271B9EF400707CFE /* ViewModel */,
 				1A971DCB271B9EEF00707CFE /* View */,
 			);
@@ -164,6 +172,23 @@
 				1A971DCD271B9F1500707CFE /* FlyingListViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1A971DCF271BA3B200707CFE /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				1A971DD0271BA3C100707CFE /* FlyingListRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		1A971DD2271BA54000707CFE /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				1A971DD3271BA61B00707CFE /* FlyingDutchmanModel.swift */,
+				1A971DD6271BA65100707CFE /* FlyingDutchmanItemModel.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,8 +322,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A19646C271B0916002AF824 /* ViewController.swift in Sources */,
+				1A971DD1271BA3C100707CFE /* FlyingListRouter.swift in Sources */,
 				1A196468271B0916002AF824 /* AppDelegate.swift in Sources */,
+				1A971DD4271BA61B00707CFE /* FlyingDutchmanModel.swift in Sources */,
 				1A19646A271B0916002AF824 /* SceneDelegate.swift in Sources */,
+				1A971DD7271BA65100707CFE /* FlyingDutchmanItemModel.swift in Sources */,
 				1A971DCE271B9F1500707CFE /* FlyingListViewModel.swift in Sources */,
 				1A971DC9271B9DD400707CFE /* Routable.swift in Sources */,
 			);
