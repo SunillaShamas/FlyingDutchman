@@ -35,6 +35,8 @@
 		1A971DFA271C50E500707CFE /* AirportListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A971DF9271C50E500707CFE /* AirportListViewModelTests.swift */; };
 		1A971DFD271C59F500707CFE /* Locale+CurrencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A971DFC271C59F500707CFE /* Locale+CurrencyFormatter.swift */; };
 		1A971DFF271C5A2300707CFE /* UIView+ConstrainSubview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A971DFE271C5A2300707CFE /* UIView+ConstrainSubview.swift */; };
+		1A971E01271C621500707CFE /* LocalExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A971E00271C621500707CFE /* LocalExtensionTests.swift */; };
+		1A971E03271C632700707CFE /* AirportDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A971E02271C632700707CFE /* AirportDetailViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +91,8 @@
 		1A971DF9271C50E500707CFE /* AirportListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportListViewModelTests.swift; sourceTree = "<group>"; };
 		1A971DFC271C59F500707CFE /* Locale+CurrencyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Locale+CurrencyFormatter.swift"; sourceTree = "<group>"; };
 		1A971DFE271C5A2300707CFE /* UIView+ConstrainSubview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ConstrainSubview.swift"; sourceTree = "<group>"; };
+		1A971E00271C621500707CFE /* LocalExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalExtensionTests.swift; sourceTree = "<group>"; };
+		1A971E02271C632700707CFE /* AirportDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportDetailViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +165,8 @@
 				1A196480271B0919002AF824 /* Info.plist */,
 				1A971DF4271C4E5300707CFE /* MockAirportListService.swift */,
 				1A971DF9271C50E500707CFE /* AirportListViewModelTests.swift */,
+				1A971E00271C621500707CFE /* LocalExtensionTests.swift */,
+				1A971E02271C632700707CFE /* AirportDetailViewModelTests.swift */,
 			);
 			path = FlyingDutchmanTests;
 			sourceTree = "<group>";
@@ -445,6 +451,8 @@
 				1A19647F271B0919002AF824 /* FlyingDutchmanTests.swift in Sources */,
 				1A971DF5271C4E5300707CFE /* MockAirportListService.swift in Sources */,
 				1A971DFA271C50E500707CFE /* AirportListViewModelTests.swift in Sources */,
+				1A971E01271C621500707CFE /* LocalExtensionTests.swift in Sources */,
+				1A971E03271C632700707CFE /* AirportDetailViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

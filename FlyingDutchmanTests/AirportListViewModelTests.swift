@@ -47,9 +47,8 @@ class AirportListViewModelTests: XCTestCase {
         viewModel?.viewDidLoad()
         let model = viewModel?.modelFor(index: 0)
         XCTAssertNotNil(model)
-        XCTAssertEqual(model?.airportCode, "BFQ")
+        XCTAssertEqual(model?.airportName, "Bahia Pinas")
         XCTAssertEqual(model?.country.countryName, "Panama")
-        XCTAssertEqual(model?.region.regionName, "Americas")
     }
 
 }
