@@ -25,7 +25,6 @@
 		1A971DDE271BCB0100707CFE /* CityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A971DDD271BCB0100707CFE /* CityModel.swift */; };
 		1A971DE0271BCB3C00707CFE /* CountryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A971DDF271BCB3C00707CFE /* CountryModel.swift */; };
 		1A971DE2271BCB5000707CFE /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A971DE1271BCB5000707CFE /* LocationModel.swift */; };
-		1A971DE4271BCB6C00707CFE /* RegionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A971DE3271BCB6C00707CFE /* RegionModel.swift */; };
 		1A971DEB271BD72200707CFE /* AirportDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A971DE9271BD72200707CFE /* AirportDetailViewController.swift */; };
 		1A971DEC271BD72200707CFE /* AirportDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A971DEA271BD72200707CFE /* AirportDetailViewController.xib */; };
 		1A971DEE271BD82D00707CFE /* AirportDetailRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A971DED271BD82D00707CFE /* AirportDetailRow.swift */; };
@@ -80,7 +79,6 @@
 		1A971DDD271BCB0100707CFE /* CityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityModel.swift; sourceTree = "<group>"; };
 		1A971DDF271BCB3C00707CFE /* CountryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryModel.swift; sourceTree = "<group>"; };
 		1A971DE1271BCB5000707CFE /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
-		1A971DE3271BCB6C00707CFE /* RegionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionModel.swift; sourceTree = "<group>"; };
 		1A971DE9271BD72200707CFE /* AirportDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportDetailViewController.swift; sourceTree = "<group>"; };
 		1A971DEA271BD72200707CFE /* AirportDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AirportDetailViewController.xib; sourceTree = "<group>"; };
 		1A971DED271BD82D00707CFE /* AirportDetailRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportDetailRow.swift; sourceTree = "<group>"; };
@@ -229,7 +227,6 @@
 				1A971DDD271BCB0100707CFE /* CityModel.swift */,
 				1A971DDF271BCB3C00707CFE /* CountryModel.swift */,
 				1A971DE1271BCB5000707CFE /* LocationModel.swift */,
-				1A971DE3271BCB6C00707CFE /* RegionModel.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -435,7 +432,6 @@
 				1A971DD7271BA65100707CFE /* AirportModel.swift in Sources */,
 				1A971DFF271C5A2300707CFE /* UIView+ConstrainSubview.swift in Sources */,
 				1A971DCE271B9F1500707CFE /* AirportListViewModel.swift in Sources */,
-				1A971DE4271BCB6C00707CFE /* RegionModel.swift in Sources */,
 				1A971DEE271BD82D00707CFE /* AirportDetailRow.swift in Sources */,
 				1A971DD9271BB17F00707CFE /* APIService.swift in Sources */,
 				1A971DC9271B9DD400707CFE /* Routable.swift in Sources */,

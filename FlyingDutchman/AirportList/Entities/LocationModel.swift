@@ -9,8 +9,5 @@ import Foundation
 
 // MARK: - Location
 struct LocationModel: Decodable {
-    let aboveSeaLevel: Int?
-    let latitude, latitudeRadius, longitude, longitudeRadius: Double
-    let latitudeDirection: String?
-    let longitudeDirection: String?
+    let latitude, longitude : Double
 }

@@ -15,7 +15,7 @@ enum AirportDetailSpecs: String, CaseIterable {
 
 class AirportDetailViewModel {
     let detailModel: AirportModel
-    lazy var specs : [String:String] = [:]
+    lazy var specs : [(String,String)] = []
 
     init(detailModel: AirportModel) {
         self.detailModel = detailModel
@@ -25,11 +25,11 @@ class AirportDetailViewModel {
         for spec in AirportDetailSpecs.allCases {
             switch spec {
             case .currency:
-                specs[spec.rawValue] = Locale.getFormattedCurrency(countryCode: detailModel.country.countryCode)
+                specs.append( (spec.rawValue, Locale.getFormattedCurrency(countryCode: detailModel.country.countryCode)) )
             case .location:
-                specs[spec.rawValue] = "Lat: \(detailModel.location.latitude) Long: \(detailModel.location.longitude)"
+                specs.append( (spec.rawValue, "Lat: \(detailModel.location.latitude) Long: \(detailModel.location.longitude)") )
             case .timezone:
-                specs[spec.rawValue] = "\(String(describing: detailModel.city.timeZoneName ?? ""))"
+                specs.append( (spec.rawValue, "\(String(describing: detailModel.city.timeZoneName ?? ""))") )
             }
         }
     }

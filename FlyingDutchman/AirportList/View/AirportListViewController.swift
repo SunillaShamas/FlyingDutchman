@@ -83,7 +83,7 @@ extension AirportListViewController: UITableViewDelegate {
 
         let detailsViewController = AirportDetailViewController()
         detailsViewController.viewModel = model
-
+        detailsViewController.modalPresentationStyle = .fullScreen
         present(detailsViewController, animated: true)
         
     }

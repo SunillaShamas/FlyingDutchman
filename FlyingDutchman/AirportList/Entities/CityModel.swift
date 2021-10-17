@@ -9,5 +9,5 @@ import Foundation
 
 // MARK: - City
 struct CityModel: Decodable {
-    let cityCode, cityName, timeZoneName: String?
+    let timeZoneName: String?
 }
