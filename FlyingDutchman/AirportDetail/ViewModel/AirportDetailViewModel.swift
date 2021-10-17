@@ -25,8 +25,7 @@ class AirportDetailViewModel {
         for spec in AirportDetailSpecs.allCases {
             switch spec {
             case .currency:
-                let currency = Locale.currency[detailModel.country.countryCode]
-                specs[spec.rawValue] = "\(String(describing: currency?.name ?? "")) - \(String(describing: currency?.symbol ?? ""))"
+                specs[spec.rawValue] = Locale.getFormattedCurrency(countryCode: detailModel.country.countryCode)
             case .location:
                 specs[spec.rawValue] = "Lat: \(detailModel.location.latitude) Long: \(detailModel.location.longitude)"
             case .timezone:
@@ -37,12 +36,5 @@ class AirportDetailViewModel {
 
     func viewDidLoad() {
         setupSpecs()
-    }
-}
-
-private extension Locale {
-    static let currency: [String: (code: String?, symbol: String?, name: String?)] = isoRegionCodes.reduce(into: [:]) {
-        let locale = Locale(identifier: identifier(fromComponents: [NSLocale.Key.countryCode.rawValue: $1]))
-        $0[$1] = (locale.currencyCode, locale.currencySymbol, locale.localizedString(forCurrencyCode: locale.currencyCode ?? ""))
     }
 }

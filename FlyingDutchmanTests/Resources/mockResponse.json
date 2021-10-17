@@ -1,0 +1,62 @@
+[{
+    "airportCode": "BFQ",
+    "internationalAirport": false,
+    "domesticAirport": false,
+    "regionalAirport": false,
+    "onlineIndicator": false,
+    "eticketableAirport": false,
+    "location": {
+      "aboveSeaLevel": 0,
+      "latitude": 7.35,
+      "latitudeRadius": 0.1324,
+      "longitude": 78.10,
+      "longitudeRadius": -1.3643,
+      "latitudeDirection": "N",
+      "longitudeDirection": "W"
+    },
+    "airportName": "Bahia Pinas",
+    "city": {
+      "cityCode": "BFQ",
+      "cityName": "Bahia Pinas",
+      "timeZoneName": "America/Panama"
+    },
+    "country": {
+      "countryCode": "PA",
+      "countryName": "Panama"
+    },
+    "region": {
+      "regionCode": "AM",
+      "regionName": "Americas"
+    }
+  },
+  {
+    "airportCode": "BFS",
+    "internationalAirport": false,
+    "domesticAirport": false,
+    "regionalAirport": false,
+    "onlineIndicator": true,
+    "eticketableAirport": false,
+    "location": {
+      "aboveSeaLevel": 267,
+      "latitude": 54.39,
+      "latitudeRadius": 0.9538,
+      "longitude": 6.13,
+      "longitudeRadius": -0.1085,
+      "latitudeDirection": "N",
+      "longitudeDirection": "W"
+    },
+    "airportName": "Belfast (International)",
+    "city": {
+      "cityCode": "BFS",
+      "cityName": "Belfast",
+      "timeZoneName": "Europe/London"
+    },
+    "country": {
+      "countryCode": "GB",
+      "countryName": "United Kingdom"
+    },
+    "region": {
+      "regionCode": "EU",
+      "regionName": "Europe"
+    }
+  }]

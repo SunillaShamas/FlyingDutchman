@@ -14,12 +14,16 @@ enum AirportListViewState {
 }
 
 class AirportListViewModel {
-    private let service = AirportService()
+    private let service: APIService
     private var airportList: AirportListModel?
     var viewStateDidUpdate: ( (AirportListViewState) -> Void)?
 
     var airportCount : Int {
         airportList?.count ?? 0
+    }
+
+    init(apiService: APIService) {
+        service = apiService
     }
 
     func viewDidLoad() {

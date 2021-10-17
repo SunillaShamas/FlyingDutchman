@@ -31,6 +31,11 @@
 		1A971DEE271BD82D00707CFE /* AirportDetailRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A971DED271BD82D00707CFE /* AirportDetailRow.swift */; };
 		1A971DF0271BD84800707CFE /* AirportDetailRow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A971DEF271BD84800707CFE /* AirportDetailRow.xib */; };
 		1A971DF3271BD98E00707CFE /* AirportDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A971DF2271BD98E00707CFE /* AirportDetailViewModel.swift */; };
+		1A971DF5271C4E5300707CFE /* MockAirportListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A971DF4271C4E5300707CFE /* MockAirportListService.swift */; };
+		1A971DF8271C4EBC00707CFE /* mockResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 1A971DF7271C4EBC00707CFE /* mockResponse.json */; };
+		1A971DFA271C50E500707CFE /* AirportListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A971DF9271C50E500707CFE /* AirportListViewModelTests.swift */; };
+		1A971DFD271C59F500707CFE /* Locale+CurrencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A971DFC271C59F500707CFE /* Locale+CurrencyFormatter.swift */; };
+		1A971DFF271C5A2300707CFE /* UIView+ConstrainSubview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A971DFE271C5A2300707CFE /* UIView+ConstrainSubview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +86,11 @@
 		1A971DED271BD82D00707CFE /* AirportDetailRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportDetailRow.swift; sourceTree = "<group>"; };
 		1A971DEF271BD84800707CFE /* AirportDetailRow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AirportDetailRow.xib; sourceTree = "<group>"; };
 		1A971DF2271BD98E00707CFE /* AirportDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportDetailViewModel.swift; sourceTree = "<group>"; };
+		1A971DF4271C4E5300707CFE /* MockAirportListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAirportListService.swift; sourceTree = "<group>"; };
+		1A971DF7271C4EBC00707CFE /* mockResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = mockResponse.json; sourceTree = "<group>"; };
+		1A971DF9271C50E500707CFE /* AirportListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportListViewModelTests.swift; sourceTree = "<group>"; };
+		1A971DFC271C59F500707CFE /* Locale+CurrencyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Locale+CurrencyFormatter.swift"; sourceTree = "<group>"; };
+		1A971DFE271C5A2300707CFE /* UIView+ConstrainSubview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ConstrainSubview.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +141,7 @@
 		1A196466271B0915002AF824 /* FlyingDutchman */ = {
 			isa = PBXGroup;
 			children = (
+				1A971DFB271C59CC00707CFE /* Extensions */,
 				1A971DC7271B9DD400707CFE /* Network */,
 				1A196467271B0916002AF824 /* AppDelegate.swift */,
 				1A196469271B0916002AF824 /* SceneDelegate.swift */,
@@ -147,8 +158,11 @@
 		1A19647D271B0919002AF824 /* FlyingDutchmanTests */ = {
 			isa = PBXGroup;
 			children = (
+				1A971DF6271C4EA800707CFE /* Resources */,
 				1A19647E271B0919002AF824 /* FlyingDutchmanTests.swift */,
 				1A196480271B0919002AF824 /* Info.plist */,
+				1A971DF4271C4E5300707CFE /* MockAirportListService.swift */,
+				1A971DF9271C50E500707CFE /* AirportListViewModelTests.swift */,
 			);
 			path = FlyingDutchmanTests;
 			sourceTree = "<group>";
@@ -254,6 +268,23 @@
 				1A971DF2271BD98E00707CFE /* AirportDetailViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1A971DF6271C4EA800707CFE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1A971DF7271C4EBC00707CFE /* mockResponse.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1A971DFB271C59CC00707CFE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1A971DFC271C59F500707CFE /* Locale+CurrencyFormatter.swift */,
+				1A971DFE271C5A2300707CFE /* UIView+ConstrainSubview.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -371,6 +402,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A971DF8271C4EBC00707CFE /* mockResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +421,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A971DF3271BD98E00707CFE /* AirportDetailViewModel.swift in Sources */,
+				1A971DFD271C59F500707CFE /* Locale+CurrencyFormatter.swift in Sources */,
 				1A19646C271B0916002AF824 /* AirportListViewController.swift in Sources */,
 				1A971DDE271BCB0100707CFE /* CityModel.swift in Sources */,
 				1A971DD1271BA3C100707CFE /* AirportListRouter.swift in Sources */,
@@ -400,6 +433,7 @@
 				1A971DEB271BD72200707CFE /* AirportDetailViewController.swift in Sources */,
 				1A19646A271B0916002AF824 /* SceneDelegate.swift in Sources */,
 				1A971DD7271BA65100707CFE /* AirportModel.swift in Sources */,
+				1A971DFF271C5A2300707CFE /* UIView+ConstrainSubview.swift in Sources */,
 				1A971DCE271B9F1500707CFE /* AirportListViewModel.swift in Sources */,
 				1A971DE4271BCB6C00707CFE /* RegionModel.swift in Sources */,
 				1A971DEE271BD82D00707CFE /* AirportDetailRow.swift in Sources */,
@@ -413,6 +447,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A19647F271B0919002AF824 /* FlyingDutchmanTests.swift in Sources */,
+				1A971DF5271C4E5300707CFE /* MockAirportListService.swift in Sources */,
+				1A971DFA271C50E500707CFE /* AirportListViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

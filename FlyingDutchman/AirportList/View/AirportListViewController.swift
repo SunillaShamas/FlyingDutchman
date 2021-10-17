@@ -12,7 +12,16 @@ class AirportListViewController: UIViewController {
     @IBOutlet private weak var loadingIndicator: UIActivityIndicatorView!
     @IBOutlet private weak var tableView: UITableView!
 
-    private var viewModel: AirportListViewModel = .init()
+    //This should be moved out of the VC and to a coordinator
+    private var viewModel: AirportListViewModel = .init(apiService: AirportService())
+
+    private var headerLabel: UILabel {
+        let label = UILabel()
+        label.text = "Airports"
+        label.textAlignment = .center
+        label.font = UIFont.boldSystemFont(ofSize: 26)
+        return label
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,13 +43,10 @@ class AirportListViewController: UIViewController {
         let header  = UIView()
         header.translatesAutoresizingMaskIntoConstraints = false
 
-        let label = UILabel()
-        label.text = "Airports"
-        label.textAlignment = .center
-        label.font = UIFont.boldSystemFont(ofSize: 26)
-
+        let label = headerLabel
         header.addSubview(label)
         label.constrain(to: header, topMargin: 10, bottomMargin: 10, leadingMargin: 10, trailingMargin: 10)
+
         tableView.tableHeaderView = header
         header.centerXAnchor.constraint(equalTo: tableView.centerXAnchor).isActive = true
         header.widthAnchor.constraint(equalTo: tableView.widthAnchor).isActive = true
@@ -97,26 +103,5 @@ extension AirportListViewController: UITableViewDataSource {
         cell.textLabel?.text = model.airportName
         cell.detailTextLabel?.text = model.country.countryName
         return cell
-    }
-}
-
-
-extension UIView {
-    /// Constraint to a layout guide using the provided margins. Provide a nil margin if you wish for a certain edge to remain un-pinned.
-    func constrain(to view: UIView,
-                   topMargin: CGFloat? = 0,
-                   bottomMargin: CGFloat? = 0,
-                   leadingMargin: CGFloat? = 0,
-                   trailingMargin: CGFloat? = 0) {
-        translatesAutoresizingMaskIntoConstraints = false
-
-        let constraints: [NSLayoutConstraint?] = [
-            topMargin.map({ topAnchor.constraint(equalTo: view.topAnchor, constant: $0) }),
-            bottomMargin.map({ bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -$0) }),
-            leadingMargin.map({ leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: $0) }),
-            trailingMargin.map({ trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -$0) })
-        ]
-
-        NSLayoutConstraint.activate(constraints.compactMap({ $0 }))
     }
 }
