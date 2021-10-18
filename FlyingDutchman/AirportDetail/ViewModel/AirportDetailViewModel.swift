@@ -12,10 +12,15 @@ enum AirportDetailSpecs: String, CaseIterable {
     case timezone = "TimeZone"
     case location = "Location"
 }
+typealias Specification = (String, String)
 
 class AirportDetailViewModel {
-    let detailModel: AirportModel
-    lazy var specs : [(String,String)] = []
+    private let detailModel: AirportModel
+    private lazy var specs : [Specification] = []
+
+    var specificationsCount: Int {
+        specs.count
+    }
 
     init(detailModel: AirportModel) {
         self.detailModel = detailModel
@@ -36,5 +41,10 @@ class AirportDetailViewModel {
 
     func viewDidLoad() {
         setupSpecs()
+    }
+
+    func specificationFor(index: Int) -> Specification? {
+        guard  index >= 0, index < specificationsCount else { return nil }
+        return specs[index]
     }
 }

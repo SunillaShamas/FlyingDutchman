@@ -51,4 +51,10 @@ class AirportListViewModelTests: XCTestCase {
         XCTAssertEqual(model?.country.countryName, "Panama")
     }
 
+    func testViewModelForIndex() {
+        viewModel?.viewDidLoad()
+        let model = viewModel?.viewModelForDetail(at: 0)
+        XCTAssertNotNil(model)
+    }
+
 }

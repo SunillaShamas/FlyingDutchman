@@ -62,6 +62,9 @@ class AirportListViewController: UIViewController {
         DispatchQueue.main.async { [weak self] in
             guard let self = self else { return }
 
+            self.loadingIndicator.isHidden = true
+            self.tableView.isHidden = true
+
             switch state {
             case .loading:
                 self.loadingIndicator.isHidden = false
@@ -77,14 +80,17 @@ class AirportListViewController: UIViewController {
     }
 
     func showRetryAlert() {
-        let alert = UIAlertController(title: "Data fetch failed", message: "Would you like to retry?", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Something went wrong...",
+                                      message: "There was an issue retrieving the list for you.",
+                                      preferredStyle: .alert)
 
-        alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { [weak self] action in
+        alert.addAction(UIAlertAction(title: "Try Again",
+                                      style: .default,
+                                      handler: { [weak self] action in
             self?.viewModel.viewDidRetry()
         }))
-        alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
 
-        self.present(alert, animated: true)
+        present(alert, animated: true)
     }
 
 }

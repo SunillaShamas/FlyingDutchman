@@ -19,12 +19,16 @@ class AirportDetailViewController: UIViewController {
     }
 
     private func setupView() {
-        guard let specs = viewModel?.specs else { return }
-        for (key,value) in specs {
-            if let row = AirportDetailRow.make()
+        guard let specs = viewModel?.specificationsCount, specs > 0 else {
+            addBackButton()
+            return
+        }
+        for index in 0...specs {
+            if let row = AirportDetailRow.make(),
+               let specification = viewModel?.specificationFor(index: index)
             {
-                row.titleLabel.text = key
-                row.descriptionLabel.text = value
+                row.titleLabel.text = specification.0
+                row.descriptionLabel.text = specification.1
                 stackView.addArrangedSubview(row)
             }
         }

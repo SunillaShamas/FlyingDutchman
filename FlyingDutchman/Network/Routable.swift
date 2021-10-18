@@ -39,3 +39,47 @@ protocol Routable {
 
     func asURLRequest() throws -> URLRequest
 }
+
+extension Routable {
+    var methodType: HTTPType {
+        return .GET
+    }
+
+    var scheme: RoutableScheme {
+        return .https
+    }
+
+    var queryItems: [URLQueryItem] {
+        return []
+    }
+
+    var headers: [String : Any] {
+        return [:]
+    }
+
+    /// Creates a URLRequest object using the implemented Routable protocol
+    /// - Throws: RouteError
+    /// - Returns: URLRequest
+    func asURLRequest() throws -> URLRequest {
+
+        var components = URLComponents()
+        components.scheme = scheme.rawValue
+        components.host = baseURL
+        components.path = path
+        components.queryItems = queryItems
+
+        guard let url = components.url else{
+            throw RouteError.invalidRoute
+        }
+
+        var request = URLRequest(url: url)
+        request.httpMethod = methodType.rawValue
+
+        for headerField in headers.keys {
+            request.setValue(headers[headerField] as? String, forHTTPHeaderField: headerField)
+        }
+
+        return request
+    }
+
+}

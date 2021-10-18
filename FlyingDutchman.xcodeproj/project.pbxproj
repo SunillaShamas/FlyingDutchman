@@ -13,8 +13,6 @@
 		1A19646F271B0916002AF824 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A19646D271B0916002AF824 /* Main.storyboard */; };
 		1A196471271B0918002AF824 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A196470271B0918002AF824 /* Assets.xcassets */; };
 		1A196474271B0918002AF824 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A196472271B0918002AF824 /* LaunchScreen.storyboard */; };
-		1A19647F271B0919002AF824 /* FlyingDutchmanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A19647E271B0919002AF824 /* FlyingDutchmanTests.swift */; };
-		1A19648A271B0919002AF824 /* FlyingDutchmanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A196489271B0919002AF824 /* FlyingDutchmanUITests.swift */; };
 		1A971DC9271B9DD400707CFE /* Routable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A971DC8271B9DD400707CFE /* Routable.swift */; };
 		1A971DCE271B9F1500707CFE /* AirportListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A971DCD271B9F1500707CFE /* AirportListViewModel.swift */; };
 		1A971DD1271BA3C100707CFE /* AirportListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A971DD0271BA3C100707CFE /* AirportListRouter.swift */; };
@@ -35,19 +33,13 @@
 		1A971DFA271C50E500707CFE /* AirportListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A971DF9271C50E500707CFE /* AirportListViewModelTests.swift */; };
 		1A971DFD271C59F500707CFE /* Locale+CurrencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A971DFC271C59F500707CFE /* Locale+CurrencyFormatter.swift */; };
 		1A971DFF271C5A2300707CFE /* UIView+ConstrainSubview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A971DFE271C5A2300707CFE /* UIView+ConstrainSubview.swift */; };
-		1A971E01271C621500707CFE /* LocalExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A971E00271C621500707CFE /* LocalExtensionTests.swift */; };
+		1A971E01271C621500707CFE /* LocaleExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A971E00271C621500707CFE /* LocaleExtensionTests.swift */; };
 		1A971E03271C632700707CFE /* AirportDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A971E02271C632700707CFE /* AirportDetailViewModelTests.swift */; };
+		1A971E0A271CED4700707CFE /* AirportListRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A971E09271CED4700707CFE /* AirportListRouterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		1A19647B271B0919002AF824 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1A19645C271B0915002AF824 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1A196463271B0915002AF824;
-			remoteInfo = FlyingDutchman;
-		};
-		1A196486271B0919002AF824 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1A19645C271B0915002AF824 /* Project object */;
 			proxyType = 1;
@@ -66,11 +58,7 @@
 		1A196473271B0918002AF824 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A196475271B0918002AF824 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A19647A271B0919002AF824 /* FlyingDutchmanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlyingDutchmanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A19647E271B0919002AF824 /* FlyingDutchmanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyingDutchmanTests.swift; sourceTree = "<group>"; };
 		1A196480271B0919002AF824 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1A196485271B0919002AF824 /* FlyingDutchmanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlyingDutchmanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A196489271B0919002AF824 /* FlyingDutchmanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyingDutchmanUITests.swift; sourceTree = "<group>"; };
-		1A19648B271B0919002AF824 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A971DC8271B9DD400707CFE /* Routable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Routable.swift; sourceTree = "<group>"; };
 		1A971DCD271B9F1500707CFE /* AirportListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportListViewModel.swift; sourceTree = "<group>"; };
 		1A971DD0271BA3C100707CFE /* AirportListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportListRouter.swift; sourceTree = "<group>"; };
@@ -91,8 +79,9 @@
 		1A971DF9271C50E500707CFE /* AirportListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportListViewModelTests.swift; sourceTree = "<group>"; };
 		1A971DFC271C59F500707CFE /* Locale+CurrencyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Locale+CurrencyFormatter.swift"; sourceTree = "<group>"; };
 		1A971DFE271C5A2300707CFE /* UIView+ConstrainSubview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ConstrainSubview.swift"; sourceTree = "<group>"; };
-		1A971E00271C621500707CFE /* LocalExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalExtensionTests.swift; sourceTree = "<group>"; };
+		1A971E00271C621500707CFE /* LocaleExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleExtensionTests.swift; sourceTree = "<group>"; };
 		1A971E02271C632700707CFE /* AirportDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportDetailViewModelTests.swift; sourceTree = "<group>"; };
+		1A971E09271CED4700707CFE /* AirportListRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportListRouterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,13 +99,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1A196482271B0919002AF824 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -125,7 +107,6 @@
 			children = (
 				1A196466271B0915002AF824 /* FlyingDutchman */,
 				1A19647D271B0919002AF824 /* FlyingDutchmanTests */,
-				1A196488271B0919002AF824 /* FlyingDutchmanUITests */,
 				1A196465271B0915002AF824 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -135,7 +116,6 @@
 			children = (
 				1A196464271B0915002AF824 /* FlyingDutchman.app */,
 				1A19647A271B0919002AF824 /* FlyingDutchmanTests.xctest */,
-				1A196485271B0919002AF824 /* FlyingDutchmanUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -160,24 +140,13 @@
 		1A19647D271B0919002AF824 /* FlyingDutchmanTests */ = {
 			isa = PBXGroup;
 			children = (
-				1A971DF6271C4EA800707CFE /* Resources */,
-				1A19647E271B0919002AF824 /* FlyingDutchmanTests.swift */,
+				1A971E08271CEC4E00707CFE /* Mocks */,
+				1A971E07271CEC1A00707CFE /* ExtensionsTests */,
+				1A971E06271CEC0E00707CFE /* ViewModelTests */,
+				1A971E04271CEC0100707CFE /* RouterTests */,
 				1A196480271B0919002AF824 /* Info.plist */,
-				1A971DF4271C4E5300707CFE /* MockAirportListService.swift */,
-				1A971DF9271C50E500707CFE /* AirportListViewModelTests.swift */,
-				1A971E00271C621500707CFE /* LocalExtensionTests.swift */,
-				1A971E02271C632700707CFE /* AirportDetailViewModelTests.swift */,
 			);
 			path = FlyingDutchmanTests;
-			sourceTree = "<group>";
-		};
-		1A196488271B0919002AF824 /* FlyingDutchmanUITests */ = {
-			isa = PBXGroup;
-			children = (
-				1A196489271B0919002AF824 /* FlyingDutchmanUITests.swift */,
-				1A19648B271B0919002AF824 /* Info.plist */,
-			);
-			path = FlyingDutchmanUITests;
 			sourceTree = "<group>";
 		};
 		1A971DC7271B9DD400707CFE /* Network */ = {
@@ -290,6 +259,40 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		1A971E04271CEC0100707CFE /* RouterTests */ = {
+			isa = PBXGroup;
+			children = (
+				1A971E09271CED4700707CFE /* AirportListRouterTests.swift */,
+			);
+			path = RouterTests;
+			sourceTree = "<group>";
+		};
+		1A971E06271CEC0E00707CFE /* ViewModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				1A971DF9271C50E500707CFE /* AirportListViewModelTests.swift */,
+				1A971E02271C632700707CFE /* AirportDetailViewModelTests.swift */,
+			);
+			path = ViewModelTests;
+			sourceTree = "<group>";
+		};
+		1A971E07271CEC1A00707CFE /* ExtensionsTests */ = {
+			isa = PBXGroup;
+			children = (
+				1A971E00271C621500707CFE /* LocaleExtensionTests.swift */,
+			);
+			path = ExtensionsTests;
+			sourceTree = "<group>";
+		};
+		1A971E08271CEC4E00707CFE /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				1A971DF4271C4E5300707CFE /* MockAirportListService.swift */,
+				1A971DF6271C4EA800707CFE /* Resources */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -328,24 +331,6 @@
 			productReference = 1A19647A271B0919002AF824 /* FlyingDutchmanTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		1A196484271B0919002AF824 /* FlyingDutchmanUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1A196494271B0919002AF824 /* Build configuration list for PBXNativeTarget "FlyingDutchmanUITests" */;
-			buildPhases = (
-				1A196481271B0919002AF824 /* Sources */,
-				1A196482271B0919002AF824 /* Frameworks */,
-				1A196483271B0919002AF824 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1A196487271B0919002AF824 /* PBXTargetDependency */,
-			);
-			name = FlyingDutchmanUITests;
-			productName = FlyingDutchmanUITests;
-			productReference = 1A196485271B0919002AF824 /* FlyingDutchmanUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -359,10 +344,6 @@
 						CreatedOnToolsVersion = 12.5.1;
 					};
 					1A196479271B0919002AF824 = {
-						CreatedOnToolsVersion = 12.5.1;
-						TestTargetID = 1A196463271B0915002AF824;
-					};
-					1A196484271B0919002AF824 = {
 						CreatedOnToolsVersion = 12.5.1;
 						TestTargetID = 1A196463271B0915002AF824;
 					};
@@ -383,7 +364,6 @@
 			targets = (
 				1A196463271B0915002AF824 /* FlyingDutchman */,
 				1A196479271B0919002AF824 /* FlyingDutchmanTests */,
-				1A196484271B0919002AF824 /* FlyingDutchmanUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -406,13 +386,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A971DF8271C4EBC00707CFE /* mockResponse.json in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1A196483271B0919002AF824 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,19 +421,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A19647F271B0919002AF824 /* FlyingDutchmanTests.swift in Sources */,
 				1A971DF5271C4E5300707CFE /* MockAirportListService.swift in Sources */,
 				1A971DFA271C50E500707CFE /* AirportListViewModelTests.swift in Sources */,
-				1A971E01271C621500707CFE /* LocalExtensionTests.swift in Sources */,
+				1A971E0A271CED4700707CFE /* AirportListRouterTests.swift in Sources */,
+				1A971E01271C621500707CFE /* LocaleExtensionTests.swift in Sources */,
 				1A971E03271C632700707CFE /* AirportDetailViewModelTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1A196481271B0919002AF824 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1A19648A271B0919002AF824 /* FlyingDutchmanUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,11 +436,6 @@
 			isa = PBXTargetDependency;
 			target = 1A196463271B0915002AF824 /* FlyingDutchman */;
 			targetProxy = 1A19647B271B0919002AF824 /* PBXContainerItemProxy */;
-		};
-		1A196487271B0919002AF824 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1A196463271B0915002AF824 /* FlyingDutchman */;
-			targetProxy = 1A196486271B0919002AF824 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -697,46 +657,6 @@
 			};
 			name = Release;
 		};
-		1A196495271B0919002AF824 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8Z542654S6;
-				INFOPLIST_FILE = FlyingDutchmanUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sunillasarfraz.FlyingDutchmanUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = FlyingDutchman;
-			};
-			name = Debug;
-		};
-		1A196496271B0919002AF824 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8Z542654S6;
-				INFOPLIST_FILE = FlyingDutchmanUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sunillasarfraz.FlyingDutchmanUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = FlyingDutchman;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -763,15 +683,6 @@
 			buildConfigurations = (
 				1A196492271B0919002AF824 /* Debug */,
 				1A196493271B0919002AF824 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1A196494271B0919002AF824 /* Build configuration list for PBXNativeTarget "FlyingDutchmanUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1A196495271B0919002AF824 /* Debug */,
-				1A196496271B0919002AF824 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

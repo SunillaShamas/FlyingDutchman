@@ -36,6 +36,20 @@ class AirportDetailViewModelTests: XCTestCase {
         XCTAssertEqual(viewModel.specs[2].1, "Lat: 7.35 Long: 78.1")
     }
 
+    func testSpecsCount() {
+        viewModel.viewDidLoad()
+        XCTAssertEqual(viewModel.specificationsCount, 3)
+    }
+
+    func testSpecificationForIndex() {
+        viewModel.viewDidLoad()
+        let specification = viewModel.specificationFor(index: 0)
+        XCTAssertNotNil(specification)
+
+        let specificationNotFound = viewModel.specificationFor(index: 5)
+        XCTAssertNil(specificationNotFound)
+    }
+
     
 
 }
