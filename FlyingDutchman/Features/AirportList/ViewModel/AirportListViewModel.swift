@@ -42,6 +42,9 @@ class AirportListViewModel: AirportListViewing {
         }
     }
 
+    ///  Returns Airport Model for list entry
+    /// - Parameter index: index of item in list
+    /// - Returns: AirportModel object, nil if index out of bound
     func modelFor(index: Int) -> AirportModel? {
         guard index >= 0 && index < airportCount else {
             return nil
@@ -49,6 +52,10 @@ class AirportListViewModel: AirportListViewing {
         return airportList?[index]
     }
 
+
+    ///  Returns ViewModel for detail view screen
+    /// - Parameter index: index of item in list
+    /// - Returns: AirportDetailViewModel object, nil if index out of bound
     func viewModelForDetail(at index: Int) -> AirportDetailViewModel? {
         guard let model = modelFor(index: index) else { return nil }
         

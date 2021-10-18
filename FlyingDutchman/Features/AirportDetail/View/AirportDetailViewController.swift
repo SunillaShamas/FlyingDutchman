@@ -31,6 +31,8 @@ class AirportDetailViewController: UIViewController {
     private func setupView() {
         let specs = viewModel.specificationsCount
         guard specs > 0 else {
+            // For some reason there are no specs to be displayed,
+            // add a back button, for user to be able to go back to previous screen
             addBackButton()
             return
         }

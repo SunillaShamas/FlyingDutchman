@@ -7,6 +7,7 @@
 
 import UIKit
 
+/// View Component class to show airport specifications in AirportDetailViewController
 class AirportDetailRow: UIView {
 
     @IBOutlet weak var titleLabel: UILabel!

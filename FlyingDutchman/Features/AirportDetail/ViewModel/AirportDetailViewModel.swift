@@ -25,6 +25,7 @@ class AirportDetailViewModel: AirportDetailViewing {
         self.detailModel = detailModel
     }
 
+    /// Sets up specifications need to be shown
     private func setupSpecs() {
         for spec in AirportDetailSpecs.allCases {
             switch spec {
@@ -42,6 +43,9 @@ class AirportDetailViewModel: AirportDetailViewing {
         setupSpecs()
     }
 
+    /// Return Specification to show in list
+    /// - Parameter index: index of list to populate
+    /// - Returns: Specification Object, nil if out of bounds
     func specificationFor(index: Int) -> Specification? {
         guard  index >= 0, index < specificationsCount else { return nil }
         return specs[index]

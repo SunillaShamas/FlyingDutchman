@@ -7,6 +7,7 @@
 
 import UIKit
 
+/// Initial view class to show list of Airports
 class AirportListViewController: UIViewController {
 
     @IBOutlet private weak var loadingIndicator: UIActivityIndicatorView!
@@ -14,6 +15,7 @@ class AirportListViewController: UIViewController {
 
     private lazy var viewModel: AirportListViewing = AirportListDependencyProvider.getViewModel()
 
+    /// List Header label
     private var headerLabel: UILabel {
         let label = UILabel()
         label.text = "Airports"
@@ -21,7 +23,7 @@ class AirportListViewController: UIViewController {
         label.font = UIFont.boldSystemFont(ofSize: 26)
         return label
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -53,10 +55,14 @@ class AirportListViewController: UIViewController {
         tableView.tableHeaderView?.layoutIfNeeded()
     }
 
+
+    /// Sets state observer callback for view model to trigger view update when ever data state changes
     private func setupViewModel() {
         viewModel.viewStateDidUpdate = updateView
     }
 
+    /// Update View's state based on the state passed on by view model
+    /// - Parameter state: represents next state for the view to be updated
     private func updateView(state: AirportListViewState) {
         DispatchQueue.main.async { [weak self] in
             guard let self = self else { return }

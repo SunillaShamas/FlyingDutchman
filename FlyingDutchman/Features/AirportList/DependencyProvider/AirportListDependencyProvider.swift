@@ -13,6 +13,7 @@ protocol DependencyProviding {
 }
 
 
+/// Dependency provider for Airport list VC
 struct AirportListDependencyProvider: DependencyProviding {
     static func getService() -> APIService {
         AirportService()
