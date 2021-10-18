@@ -28,12 +28,12 @@ class AirportDetailViewModelTests: XCTestCase {
 
     func testAirportDetailViewModel() {
         viewModel.viewDidLoad()
-        XCTAssertEqual(viewModel.specs[0].0, "Currency")
-        XCTAssertEqual(viewModel.specs[0].1, "PAB - Panamanian Balboa")
-        XCTAssertEqual(viewModel.specs[1].0, "TimeZone")
-        XCTAssertEqual(viewModel.specs[1].1, "America/Panama")
-        XCTAssertEqual(viewModel.specs[2].0, "Location")
-        XCTAssertEqual(viewModel.specs[2].1, "Lat: 7.35 Long: 78.1")
+        XCTAssertEqual(viewModel.specificationFor(index: 0)?.0, "Currency")
+        XCTAssertEqual(viewModel.specificationFor(index: 0)?.1, "PAB - Panamanian Balboa")
+        XCTAssertEqual(viewModel.specificationFor(index: 1)?.0, "TimeZone")
+        XCTAssertEqual(viewModel.specificationFor(index: 1)?.1, "America/Panama")
+        XCTAssertEqual(viewModel.specificationFor(index: 2)?.0, "Location")
+        XCTAssertEqual(viewModel.specificationFor(index: 2)?.1, "Lat: 7.35 Long: 78.1")
     }
 
     func testSpecsCount() {

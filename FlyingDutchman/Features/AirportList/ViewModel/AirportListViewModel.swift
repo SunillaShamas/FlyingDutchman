@@ -7,26 +7,11 @@
 
 import Foundation
 
-enum AirportListViewState {
-    case loading
-    case loaded
-    case failure
-}
-
-protocol AirportViewing {
-    var viewStateDidUpdate: ( (AirportListViewState) -> Void)? { get set }
-    var airportCount : Int { get }
-    func viewDidLoad()
-    func viewDidRetry()
-    func modelFor(index: Int) -> AirportModel?
-    func viewModelForDetail(at index: Int) -> AirportDetailViewModel? 
-}
-
-class AirportListViewModel: AirportViewing {
+class AirportListViewModel: AirportListViewing {
     private let service: APIService
     private var airportList: AirportListModel?
-    var viewStateDidUpdate: ( (AirportListViewState) -> Void)?
 
+    var viewStateDidUpdate: ( (AirportListViewState) -> Void)?
     var airportCount : Int {
         airportList?.count ?? 0
     }

@@ -12,13 +12,6 @@ enum AirportDetailSpecs: String, CaseIterable {
     case timezone = "TimeZone"
     case location = "Location"
 }
-typealias Specification = (String, String)
-
-protocol AirportDetailViewing {
-    var specificationsCount: Int { get }
-    func viewDidLoad()
-    func specificationFor(index: Int) -> Specification? 
-}
 
 class AirportDetailViewModel: AirportDetailViewing {
     private let detailModel: AirportModel
@@ -36,11 +29,11 @@ class AirportDetailViewModel: AirportDetailViewing {
         for spec in AirportDetailSpecs.allCases {
             switch spec {
             case .currency:
-                specs.append( (spec.rawValue, Locale.getFormattedCurrency(countryCode: detailModel.country.countryCode)) )
+                specs.append((spec.rawValue, Locale.formattedCurrency(countryCode: detailModel.country.countryCode)))
             case .location:
-                specs.append( (spec.rawValue, "Lat: \(detailModel.location.latitude) Long: \(detailModel.location.longitude)") )
+                specs.append((spec.rawValue, "Lat: \(detailModel.location.latitude) Long: \(detailModel.location.longitude)"))
             case .timezone:
-                specs.append( (spec.rawValue, "\(String(describing: detailModel.city.timeZoneName ?? ""))") )
+                specs.append((spec.rawValue, "\(String(describing: detailModel.city.timeZoneName ?? ""))"))
             }
         }
     }

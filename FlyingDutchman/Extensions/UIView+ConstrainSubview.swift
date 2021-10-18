@@ -9,7 +9,6 @@ import Foundation
 import UIKit
 
 extension UIView {
-    /// Constraint to a layout guide using the provided margins. Provide a nil margin if you wish for a certain edge to remain un-pinned.
     func constrain(to view: UIView,
                    topMargin: CGFloat? = 0,
                    bottomMargin: CGFloat? = 0,

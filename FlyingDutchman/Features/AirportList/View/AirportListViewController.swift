@@ -12,7 +12,7 @@ class AirportListViewController: UIViewController {
     @IBOutlet private weak var loadingIndicator: UIActivityIndicatorView!
     @IBOutlet private weak var tableView: UITableView!
 
-    private var viewModel: AirportViewing = AirportListDependencyProvider.getViewModel()
+    private lazy var viewModel: AirportListViewing = AirportListDependencyProvider.getViewModel()
 
     private var headerLabel: UILabel {
         let label = UILabel()
@@ -24,7 +24,7 @@ class AirportListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
         setupView()
         setupViewModel()
         viewModel.viewDidLoad()
@@ -57,7 +57,7 @@ class AirportListViewController: UIViewController {
         viewModel.viewStateDidUpdate = updateView
     }
 
-    func updateView(state: AirportListViewState) {
+    private func updateView(state: AirportListViewState) {
         DispatchQueue.main.async { [weak self] in
             guard let self = self else { return }
 
@@ -78,7 +78,7 @@ class AirportListViewController: UIViewController {
         }
     }
 
-    func showRetryAlert() {
+    private func showRetryAlert() {
         let alert = UIAlertController(title: "Something went wrong...",
                                       message: "There was an issue retrieving the list for you.",
                                       preferredStyle: .alert)
@@ -91,9 +91,9 @@ class AirportListViewController: UIViewController {
 
         present(alert, animated: true)
     }
-
 }
 
+// MARK: - UITableViewDelegate
 extension AirportListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let model = viewModel.viewModelForDetail(at: indexPath.row) else { return }
@@ -101,10 +101,10 @@ extension AirportListViewController: UITableViewDelegate {
         let detailsViewController = AirportDetailViewController(viewModel: model)
         detailsViewController.modalPresentationStyle = .fullScreen
         present(detailsViewController, animated: true)
-        
     }
 }
 
+// MARK: - UITableViewDataSource
 extension AirportListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         viewModel.airportCount

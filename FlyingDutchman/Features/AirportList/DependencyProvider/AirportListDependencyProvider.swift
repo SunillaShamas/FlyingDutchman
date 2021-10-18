@@ -9,7 +9,7 @@ import Foundation
 
 protocol DependencyProviding {
     static func getService() -> APIService
-    static func getViewModel() -> AirportViewing
+    static func getViewModel() -> AirportListViewing
 }
 
 
@@ -18,7 +18,7 @@ struct AirportListDependencyProvider: DependencyProviding {
         AirportService()
     }
 
-    static func getViewModel() -> AirportViewing {
+    static func getViewModel() -> AirportListViewing {
         AirportListViewModel(apiService: getService())
     }
 }

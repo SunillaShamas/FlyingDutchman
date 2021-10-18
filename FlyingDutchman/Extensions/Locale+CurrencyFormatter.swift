@@ -8,7 +8,7 @@
 import Foundation
 
 extension Locale {
-    static func getFormattedCurrency(countryCode : String) -> String {
+    static func formattedCurrency(countryCode : String) -> String {
         let locale = Locale(identifier: Locale.identifier(fromComponents: [NSLocale.Key.countryCode.rawValue: countryCode]))
         let code = locale.currencyCode
         let symbol = locale.localizedString(forCurrencyCode: code ?? "")

@@ -30,12 +30,19 @@ As for `Airport List` feature, I am using `AirportListRouter` and `AirportListSe
 At the moment the response JSON from the api is quite large and is just sitting in the memory after initial load. For this reason I am only parsing the attributes in the entities that are needed. To further reduce the memory footprint this could be saved in some storage (like CoreData  etc) and then retrieved using pagination. 
 
 ## Testing Coverage:
+Overall App: 66.8%
+AiportListViewModel: 95.9%
+AirportDetailViewModel: 96.2%
+AirportListRouter: 100%
 
 
 ## Installation Instructions:
 Open `FlyingDutman.xcodeproj` and run the app.
 
 ## Improvements:
-- error view can be made in line instead of UIAlert
-- Handle no network connectivity (caching)
+- Error view can be made in line instead of UIAlert
+- Caching is not at the moment 
 - Detail view screen UI can be improved
+- Localization is not handled
+- We can use a custom class for detailCell, which would do view setup itself.
+- No UI testing is done at the moment

@@ -37,6 +37,21 @@ class AirportListViewModelTests: XCTestCase {
         wait(for: [loadExpectation], timeout: 1.0)
     }
 
+    func testViewDidRetry() {
+        let loadExpectation = XCTestExpectation(description: "Loaded")
+        viewModel?.viewStateDidUpdate = { state in
+            switch state {
+            case .loaded:
+                loadExpectation.fulfill()
+            default:
+                break
+            }
+        }
+        viewModel?.viewDidRetry()
+
+        wait(for: [loadExpectation], timeout: 1.0)
+    }
+
     func testAirportCount() {
         XCTAssertEqual(viewModel?.airportCount, 0)
         viewModel?.viewDidLoad()
