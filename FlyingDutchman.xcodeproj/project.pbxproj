@@ -36,6 +36,7 @@
 		1A971E01271C621500707CFE /* LocaleExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A971E00271C621500707CFE /* LocaleExtensionTests.swift */; };
 		1A971E03271C632700707CFE /* AirportDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A971E02271C632700707CFE /* AirportDetailViewModelTests.swift */; };
 		1A971E0A271CED4700707CFE /* AirportListRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A971E09271CED4700707CFE /* AirportListRouterTests.swift */; };
+		1A971E0C271CFE5900707CFE /* AirportListDependencyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A971E0B271CFE5900707CFE /* AirportListDependencyProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		1A971E00271C621500707CFE /* LocaleExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleExtensionTests.swift; sourceTree = "<group>"; };
 		1A971E02271C632700707CFE /* AirportDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportDetailViewModelTests.swift; sourceTree = "<group>"; };
 		1A971E09271CED4700707CFE /* AirportListRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportListRouterTests.swift; sourceTree = "<group>"; };
+		1A971E0B271CFE5900707CFE /* AirportListDependencyProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportListDependencyProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				1A19646B271B0916002AF824 /* AirportListViewController.swift */,
+				1A971E0B271CFE5900707CFE /* AirportListDependencyProvider.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -406,6 +409,7 @@
 				1A971DDC271BB1D000707CFE /* AirportListService.swift in Sources */,
 				1A971DE2271BCB5000707CFE /* LocationModel.swift in Sources */,
 				1A971DD4271BA61B00707CFE /* AirportListModel.swift in Sources */,
+				1A971E0C271CFE5900707CFE /* AirportListDependencyProvider.swift in Sources */,
 				1A971DEB271BD72200707CFE /* AirportDetailViewController.swift in Sources */,
 				1A19646A271B0916002AF824 /* SceneDelegate.swift in Sources */,
 				1A971DD7271BA65100707CFE /* AirportModel.swift in Sources */,

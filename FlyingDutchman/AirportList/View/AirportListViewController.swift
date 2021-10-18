@@ -12,8 +12,7 @@ class AirportListViewController: UIViewController {
     @IBOutlet private weak var loadingIndicator: UIActivityIndicatorView!
     @IBOutlet private weak var tableView: UITableView!
 
-    //This should be moved out of the VC and to a coordinator
-    private var viewModel: AirportListViewModel = .init(apiService: AirportService())
+    private var viewModel: AirportViewing = AirportListDependencyProvider.getViewModel()
 
     private var headerLabel: UILabel {
         let label = UILabel()
@@ -99,8 +98,7 @@ extension AirportListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let model = viewModel.viewModelForDetail(at: indexPath.row) else { return }
 
-        let detailsViewController = AirportDetailViewController()
-        detailsViewController.viewModel = model
+        let detailsViewController = AirportDetailViewController(viewModel: model)
         detailsViewController.modalPresentationStyle = .fullScreen
         present(detailsViewController, animated: true)
         

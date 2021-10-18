@@ -8,6 +8,9 @@ This approach helps in making the ViewModel i.e all the business logic to be tes
 
 `AirportListViewModel` upon receiving `viewDidLoad` call, triggers api call to fetch the airport list using `AirportService`. The response is then loaded into memory and passed back to view model, which in turn is used by the view controller in order to render the view. 
 
+Services are injected into ViewModels, ViewModels are injected into the views as per Dependency Injection principle, except for the main list view (as its loaded from storyboard directly on launch), and it could be a futher enhancements to inject its dependency provider from some place externally. 
+
+
 ## UI Structure
 The main view of the app `AirportListViewController` uses a `UITableView` to display the list. Using `UITableViewCell` and it uses defaut title and detail labels.
 Tapping on one of the cells from the list, presents the details view `AirportDetailViewController`. This view simply uses a `UIStackView`, that is programmatically populated based on the data being displayed. 
@@ -15,6 +18,8 @@ Tapping on one of the cells from the list, presents the details view `AirportDet
 The detail view is presented on top of the main list view, as from the wireframes, there was a back button within the view. So instead of using the UINavigationController stack, I am just presenting over the list view. 
 
 The detail screen displays `Currency`, `TimeZone` and  `Location` as per the wireframes. 
+
+I have introduced a UIComponent `AirportDetailRow` that can be reused for the specifications we want to show in Detail view. 
 
 ## Network:
 The app uses `Routable` and `APIService` protocols to define network access mechanism. 

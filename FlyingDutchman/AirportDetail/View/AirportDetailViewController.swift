@@ -9,23 +9,35 @@ import UIKit
 
 class AirportDetailViewController: UIViewController {
 
-    var viewModel: AirportDetailViewModel?
+    private var viewModel: AirportDetailViewing
 
     @IBOutlet private weak var stackView: UIStackView!
+
+    init(viewModel: AirportDetailViewing) {
+        self.viewModel = viewModel
+        super.init(nibName: String(describing: AirportDetailViewController.self), bundle: nil)
+    }
+
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewModel?.viewDidLoad()
+        viewModel.viewDidLoad()
         setupView()
     }
 
     private func setupView() {
-        guard let specs = viewModel?.specificationsCount, specs > 0 else {
+        let specs = viewModel.specificationsCount
+        guard specs > 0 else {
             addBackButton()
             return
         }
+
         for index in 0...specs {
             if let row = AirportDetailRow.make(),
-               let specification = viewModel?.specificationFor(index: index)
+               let specification = viewModel.specificationFor(index: index)
             {
                 row.titleLabel.text = specification.0
                 row.descriptionLabel.text = specification.1

@@ -14,7 +14,13 @@ enum AirportDetailSpecs: String, CaseIterable {
 }
 typealias Specification = (String, String)
 
-class AirportDetailViewModel {
+protocol AirportDetailViewing {
+    var specificationsCount: Int { get }
+    func viewDidLoad()
+    func specificationFor(index: Int) -> Specification? 
+}
+
+class AirportDetailViewModel: AirportDetailViewing {
     private let detailModel: AirportModel
     private lazy var specs : [Specification] = []
 
